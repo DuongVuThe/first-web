@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(270deg, rgb(50,50,50), rgb(16, 15, 15));
+}
+header {
+    position: static;
+}
+main {
+    width: 1600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    margin: 40px auto;
+
+}
+.char-card {
+    display: flex;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px rgba(242, 240, 240, 0.8);
+    overflow: hidden;
+    position: relative;
+}
+.char-card > div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+}
+.char-card a {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.char-card h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    margin: 0;
+    color: rgb(124, 28, 214);
+    text-shadow: 1px 1px 1px rgba(20, 20, 20, 0.8);
+}
+.char-card:nth-of-type(1) h2,
+.char-card:nth-of-type(5) h2 {
+    color: rgb(243, 243, 36);
+}
+.char-card img {
+    background-color: rgb(91, 91, 91);
+    height: 100%;
+    width: 250px;
+    object-fit: cover;
+}
+.char-card:nth-of-type(1),
+.char-card:nth-of-type(5) {
+    grid-column: 1 / span 3;
+}
