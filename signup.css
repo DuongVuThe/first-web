@@ -1,0 +1,79 @@
+body {
+  background: linear-gradient(270deg, rgb(50, 50, 50), rgb(16, 15, 15));
+  font-family: sans-serif;
+}
+header {
+  position: static;
+}
+main {
+  margin: 20px 0;
+}
+h1 {
+  color: aliceblue;
+  margin: 10px auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+    margin:0.5rem 0;
+}
+form {
+  background-color: rgb(234, 221, 221);
+  width: 40rem;
+  margin: 10px auto;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px rgb(196, 190, 190);
+  padding: 1rem;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  display: block;
+  margin: 0.3rem 0;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 4px;
+  resize: none;
+}
+
+.inline-control {
+  display: flex;
+}
+
+.inline-control input {
+  width: auto;
+}
+
+#btn {
+    text-align: right;
+
+}
+
+button {
+    font:inherit;
+    padding: 0.5rem;
+    width: 5rem;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: rgba(231, 231, 211, 0.929);
+}
+button:hover {
+    background-color: rgba(246, 246, 11, 0.929);
+    transition: 0.5s;
+}

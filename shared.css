@@ -1,3 +1,7 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
 header {
   margin-top: 20px 20px 0px 20px;
   display: flex;
@@ -29,20 +33,22 @@ header img {
 }
 
 #nav-icon a {
+  display: block;
   background-color: rgba(231, 231, 211, 0.929);
   color: black;
   box-shadow: 2px 2px 4px rgb(50, 50, 50);
   padding: 10px;
   border-radius: 5px;
-  width: 120px;
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
+  width: 120px;
 }
 
 #nav-icon a:hover {
   background-color: rgba(246, 246, 11, 0.929);
+  transition: 0.5s;
 }
 
 .menu-btn {

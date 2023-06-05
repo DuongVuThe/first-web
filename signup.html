@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Quicksand:wght@500&family=Raleway:ital@1&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/icon/site.webmanifest" />
+    <link rel="stylesheet" href="/shared.css" />
+    <link rel="stylesheet" href="/signup.css" />
+    <script src="signup.js" defer></script>
+    <title>Signup</title>
+  </head>
+  <body>
+    <header>
+      <a href="/index.html"
+        ><img src="/images/icon/hsricon.jpg" alt="honkai-icon"
+      /></a>
+      <nav>
+        <ul id="nav-icon">
+          <li><a href="/characters.html">Characters</a></li>
+          <li><a href="/signup.html">Sign up</a></li>
+        </ul>
+      </nav>
+      <a href="#side" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </header>
+    <aside id="side">
+      <header>
+        <a href="/" class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </header>
+      <ul>
+        <li><a href="/characters.html">Characters</a></li>
+        <li><a href="/signup.html">Sign up</a></li>
+      </ul>
+    </aside>
+    <main>
+      <h1>Join the astral express!</h1>
+      <form>
+        <section>
+          <h2>Your information</h2>
+          <ul>
+            <li>
+              <label for="username">Your name </label>
+              <input type="text" id="username" name="username" />
+            </li>
+            <li>
+              <label for="useremail">Your email</label>
+              <input type="email" name="useremail" id="useremail" />
+            </li>
+            <li>
+              <label for="userphone">Your phone number</label>
+              <input type="tel" id="userphone" name="userphone" />
+            </li>
+            <li>
+              <label for="comment">Your comment</label>
+              <textarea
+                name="comment"
+                id="comment"
+                rows="3"
+                maxlength="60"
+              ></textarea>
+              <p><span id="remaining-char">60</span>/60</p>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <label for="reason">Why do you want to join?</label>
+          <select name="reason" id="reason">
+            <option value="fun">For fun</option>
+            <option value="exp">For experience</option>
+            <option value="challenge">For challenges</option>
+          </select>
+        </section>
+        <section>
+          <h2>Verify your account</h2>
+          <ul>
+            <li class="inline-control">
+              <input
+                type="radio"
+                id="verify-call"
+                name="verify"
+                value="verify-call"
+              />
+              <label for="verify-call">Call me</label>
+            </li>
+            <li class="inline-control">
+              <input
+                type="radio"
+                id="verify-email"
+                name="verify"
+                value="verify-email"
+              />
+              <label for="verify-email">Email me</label>
+            </li>
+            <li class="inline-control">
+              <input
+                type="radio"
+                id="verify-text"
+                name="verify"
+                value="verify-text"
+              />
+              <label for="verify-text">Text me</label>
+            </li>
+          </ul>
+        </section>
+        <section class="inline-control">
+          <input type="checkbox" id="term" name="term" />
+          <label for="term">Accept terms</label>
+        </section>
+        <section id="btn">
+          <button type="reset">Clear</button>
+          <button type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
